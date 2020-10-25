@@ -1,6 +1,6 @@
 FROM vaday/pdfbuffer
 EXPOSE 80
-
+RUN apt-get update -y
 RUN apt-get install -y golang git curl
 
 ENV GOPATH /usr/go
